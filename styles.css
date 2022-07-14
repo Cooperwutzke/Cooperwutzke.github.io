@@ -3,3 +3,17 @@
     display: flex;
     flex-direction: row;
 }
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    position: absolute;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
