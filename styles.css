@@ -1,5 +1,5 @@
 
-mainflex {
+.mainflex {
     display: flex;
     flex-direction: row;
 }
