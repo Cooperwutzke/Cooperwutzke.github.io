@@ -10,10 +10,12 @@
     height: 100%;
     width: 20%;
     position: absolute;
+    background-color: darkgrey;
 }
 
 .content {
     display: flex;
     flex-direction: row;
     margin-left: 20%;
+    background-color: aqua;
 }
