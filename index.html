@@ -7,17 +7,22 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 20%">
-                <h1>Cooper Wutzke</h1>
+        <!-- MAIN FLEX CONTAINER -->
+        <div class="container-fluid d-flex">
+            <!-- LEFT NAVBAR -->
+            <div class="d-flex flex-column flex-shrink-0 m-0 p-3 text-white bg-dark" style="width: 20%; height: 100vh;">
+                <h1 class="">Cooper Wutzke</h1>
+                <img src="https://drive.google.com/file/d/10Bx3TXnfnapqAiurYjko0U_kXTub2Zj7/view?usp=sharing" alt="Cooper Wutzke" class="w-50 p-3">
                 <h2>Software Developer</h2>
+                <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">Home</li>
                     <li class="nav-item">Resume</li>
                     <li class="nav-item">Contact</li>
                 </ul>
             </div>
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="margin-left: 20%">
+            <!-- CONTENT -->
+            <div class="d-flex flex-column flex-grow-1 p-4 text-black bg-light">
                 <div class="intro"></div>
                 <div class="blogheader">Blog Posts</div>
                 <div class="blogpost">
@@ -31,6 +36,7 @@
                     <div class="description">Default description...</div>
                 </div>
             </div>
+            <!-- FOOTER -->
             <div class="footer">
                 <div class="contactinfo"></div>
                 <div class="socialmedialinks"></div>
