@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CW-Pages</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CW-Pages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
     <body style="margin: 0;">
         <!-- MAIN FLEX CONTAINER -->
-        <div class="container-fluid d-flex">
+        <div class="container-fluid d-flex bg-light">
             <!-- LEFT NAVBAR -->
-            <div class="d-flex flex-column flex-shrink-0 m-0 p-3 text-white bg-dark" style="width: 20%; height: 100%;">
+            <div class="d-flex flex-column p-3 text-white bg-dark position-fixed" style="width: 20%; height: 100%;">
                 <h1>Cooper Wutzke</h1>
                 <img class="w-100 p-3 align-self-center" src="resources/me.jpg" alt="Cooper Wutzke">
                 <h2 class="fs-4">Software Developer</h2>
@@ -22,10 +22,10 @@
                 </ul>
             </div>
             <!-- CONTENT -->
-            <div class="d-flex flex-column flex-grow-1 text-black bg-light">
+            <div class="d-flex flex-column flex-grow-1 text-black bg-light" style="margin-left: 21%;">
                 <!-- INTRO -->
-                <div class="d-flex flex-column bg-dark bg-opacity-25 h-50">
-                    <img class="d-flex h-50 opacity-75" src="resources/intrographic.jpeg" alt="pic">
+                <div class="d-flex flex-column bg-dark bg-opacity-25 h-25">
+                    <img class="d-flex h-75 opacity-75" src="resources/intrographic.jpeg" alt="pic">
                     <div class="d-flex display-5 p-2 m-2">
                         Eastern Washington University: Computer Science Graduate
                     </div>
@@ -40,8 +40,10 @@
                     <h1 class="row display-5">Raspberry Pi HMI</h1>
                     <div class="row">
                         <img class="col-2 p-1" src="resources/RPI-HMI.JPG" alt="RPI-HMI">
-                        <div class="col text-muted">This RPI-HMI is a 7 inch backlit LCD display built around a Raspberry Pi 4. Designed for use as a mobile linux PC to run Arduino IDE and flash code to microcontrollers. In my upcoming robotics projects I will use it as HMI Touch Screen.</div>
-                        <a href="\README.md">Read more...</a>
+                        <div class="col text-muted fs-3">
+                            <p>This RPI-HMI is a 7 inch backlit LCD display built around a Raspberry Pi 4. Designed for use as a mobile linux PC to run Arduino IDE and flash code to microcontrollers. In my upcoming robotics projects I will use it as HMI Touch Screen.</p>
+                            <a class="fs-5" href="RPI-HMI/RPI-HMI.html">Read more...</a>
+                        </div>  
                     </div>
                 </div>
                 <!-- BLOG POST -->
@@ -49,26 +51,32 @@
                     <h1 class="row display-5">3D Printer</h1>
                     <div class="row">
                         <img class="col-2 p-1" src="resources/BrokenBoard.JPG" alt="Ender 3 Pro mainboard">
-                        <div class="col text-muted">Creality 4.2.2 Mainboard for Ender 3 Pro shows no visible signs of damage yet refuses to accept new firmware. Others on the internet have said that manually driving the motors can cause sufficient current to be forced back through the stepper diode and fry the board.</div>
-                        <a href="\blog\BrokenBoard.html">Read more...</a>
+                        <div class="col text-muted fs-3">
+                            <p>Creality 4.2.2 Mainboard for Ender 3 Pro shows no visible signs of damage yet refuses to accept new firmware. Others on the internet have said that manually driving the motors can cause sufficient current to be forced back through the stepper diode and fry the board.</p>
+                            <a class="fs-5" href="3D-Printer/BrokenBoard.html">Read more...</a>
+                        </div>
                     </div>
                 </div>
                 <!-- BLOG POST -->
                 <div class="d-grid bg-light m-3">
                     <h1 class="row display-5">CW-ROV</h1>
                     <div class="row">
-                        <img class="col-2 p-1" src="resources/BrokenBoard.JPG" alt="Ender 3 Pro mainboard">
-                        <div class="col text-muted">Aluminum Sheet chassis with 4 TT Gear Motor; Baby rover. I eventually want to do localization and mapping but for now I just want to be able to control the thing. There are several challenges to solve with just a remotely operated vehicle first before I move on to something autonomous.</div>
-                        <a href="\blog\CW-ROV.html">Read more...</a>
+                        <img class="col-2 p-1" src="resources/CW-ROV.JPG" alt="Ender 3 Pro mainboard">
+                        <div class="col text-muted fs-3">
+                            <p>Aluminum Sheet chassis with 4 TT Gear Motor; Baby rover. I eventually want to do localization and mapping but for now I just want to be able to control the thing. There are several challenges to solve with just a remotely operated vehicle first before I move on to something autonomous.</p>
+                            <a class="fs-5" href="CW-ROV/CW-ROV.html">Read more...</a>
+                        </div>
                     </div>
                 </div>
                 <!-- BLOG POST -->
                 <div class="d-grid bg-light m-3">
                     <h1 class="row display-5">Future SLAM Navigation</h1>
                     <div class="row">
-                        <img class="col-2 p-1" src="resources/BrokenBoard.JPG" alt="Ender 3 Pro mainboard">
-                        <div class="col text-muted">Microsoft Kinect for PC found at Puyallup Goodwill for $25. I immediately bought this thing. I could use the depth sensing ability it has to do some relatively accurate SLAM I'm sure... once I figure that bit out. I've already ran some tests with it and I was honestly surprised when everything in the dev kit I ran worked flawlessly.</div>
-                        <a href="\blog\Navigation.html">Read more...</a>
+                        <img class="col-2 p-1" src="resources/Kinect.JPG" alt="Ender 3 Pro mainboard">
+                        <div class="col text-muted fs-3">
+                            <p>Microsoft Kinect for PC found at Puyallup Goodwill for $25. I immediately bought this thing. I could use the depth sensing ability it has to do some relatively accurate SLAM I'm sure... once I figure that bit out. I've already ran some tests with it and I was honestly surprised when everything in the dev kit I ran worked flawlessly.</p>
+                            <a class="fs-5" href="Navigation/Navigation.html">Read more...</a>
+                        </div>
                     </div>
                 </div>
             </div>
