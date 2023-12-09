@@ -39,20 +39,29 @@
                 <div id="carouselSlides" class="carousel slide d-flex flex-column bg-dark bg-opacity-25 h-25" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-flex h-75 opacity-75" src="resources/intrographic.jpeg" class="d-block w-100" alt="One">
+                        <video class="img-fluid" autoplay loop muted>
+                            <source src="resources/mqttrov-demo.MOV" type="video/MOV" />
+                        </video>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-flex h-75 opacity-75" src="resources/intrographic.jpeg" class="d-block w-100" alt="Two">
+                        <video class="img-fluid" autoplay loop muted>
+                            <source src="resources/nunchuck-demo.MOV" type="video/MOV" />
+                        </video>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-flex h-75 opacity-75" src="resources/intrographic.jpeg" class="d-block w-100" alt="Three">
+                        <video class="img-fluid" autoplay loop muted>
+                            <source src="resources/gpsmpu-running.MOV" type="video/MOV" />
+                        </video>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-flex h-75 opacity-75" src="resources/sensors-setup.JPG">
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlides" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSlides" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
@@ -61,6 +70,18 @@
                 <!-- BLOG HEADER -->
                 <div class="d-flex text-primary display-1">Blog Posts</div>
                 <hr>
+
+                <!-- BLOG POST -->
+                <div class="d-grid bg-light m-3">
+                    <h1 class="row display-5">CW-ROV</h1>
+                    <div class="row">
+                        <img class="col-2 p-1" src="resources/open_CW-ROV.JPG" alt="CW-ROV">
+                        <div class="col text-muted fs-3">
+                            <p>Aluminum Sheet chassis with 4 TT Gear Motor; Baby rover. I am starting simple and just working on the basics like communication and motor control. There are several challenges to solve with just a remotely operated vehicle first before I move on to something capable of mapping and sensor fusion.</p>
+                            <a class="fs-5" href="CW-ROV/CW-ROV.html">Read more...</a>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- BLOG POST -->
                 <div class="d-grid bg-light m-3">
@@ -88,24 +109,12 @@
 
                 <!-- BLOG POST -->
                 <div class="d-grid bg-light m-3">
-                    <h1 class="row display-5">CW-ROV</h1>
-                    <div class="row">
-                        <img class="col-2 p-1" src="resources/CW-ROV.JPG" alt="Ender 3 Pro mainboard">
-                        <div class="col text-muted fs-3">
-                            <p>Aluminum Sheet chassis with 4 TT Gear Motor; Baby rover. I eventually want to do localization and mapping but for now I just want to be able to control the thing. There are several challenges to solve with just a remotely operated vehicle first before I move on to something autonomous.</p>
-                            <a class="fs-5" href="CW-ROV/CW-ROV.html">Read more...</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BLOG POST -->
-                <div class="d-grid bg-light m-3">
                     <h1 class="row display-5">Future SLAM Navigation</h1>
                     <div class="row">
-                        <img class="col-2 p-1" src="resources/Kinect.JPG" alt="Ender 3 Pro mainboard">
+                        <img class="col-2 p-1" src="resources/Kinect.JPG" alt="Kinect for SLAM projects">
                         <div class="col text-muted fs-3">
                             <p>Microsoft Kinect for PC found at Puyallup Goodwill for $25. I immediately bought this thing. I could use the depth sensing ability it has to do some relatively accurate SLAM I'm sure... once I figure that bit out. I've already ran some tests with it and I was honestly surprised when everything in the dev kit I ran worked flawlessly.</p>
-                            <a class="fs-5" href="Navigation/Navigation.html">Read more...</a>
+                            <p class="fs-5" href="Navigation/Navigation.html">More later...</p>
                         </div>
                     </div>
                 </div>
