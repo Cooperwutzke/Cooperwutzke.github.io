@@ -74,8 +74,7 @@
                     <div class="row">
                         <img class="col-2 p-1" src="resources/open_CW-ROV.JPG" alt="CW-ROV">
                         <div class="col text-muted fs-3">
-                            <p>Aluminum Sheet chassis with 4 TT Gear Motor; Baby rover. I am starting simple and just working on the basics like communication and motor control. There are several challenges to solve with just a remotely operated vehicle first before I move on to something capable of mapping and sensor fusion.</p>
-                            <a class="fs-5" href="CW-ROV/CW-ROV.html">Read more...</a>
+                            <p>Aluminum Sheet chassis with 4 TT Gear Motor; Baby rover. I am starting simple and just working on the basics like communication and motor control. There are several challenges to solve with just a remotely operated vehicle first before I move on to something capable of mapping and sensor fusion. Currently the rover uses two Raspberry Pi's to communicate wirelessly, a Raspberry Pi 4 and a Raspberry Pi Zero W. My Raspberry Pi 4 is part of my RPI-HMI project which I built for the purpose of controlling robots such as this one! The RPI-HMI runs a GUI Python app for controlling the movement of the robot. It sends data via MQTT while the Raspberry Pi Zero W attached to the robot (as seen above) hosts the MQTT server and runs a custom python script for translating MQTT motor commands into motor movement on the robot. The Raspberry Pi Zero W is setup to run the MQTT server and my python code as services using systemd, so all I have to do is plug in a battery and it's ready to receive motor commands.</p>
                         </div>
                     </div>
                 </div>
@@ -111,7 +110,7 @@
                         <img class="col-2 p-1" src="resources/Kinect.JPG" alt="Kinect for SLAM projects">
                         <div class="col text-muted fs-3">
                             <p>Microsoft Kinect for PC found at Puyallup Goodwill for $25. I immediately bought this thing. I could use the depth sensing ability it has to do some relatively accurate SLAM I'm sure... once I figure that bit out. I've already ran some tests with it and I was honestly surprised when everything in the dev kit I ran worked flawlessly.</p>
-                            <p class="fs-5" href="Navigation/Navigation.html">More later...</p>
+                            <p class="fs-5">More later...</p>
                         </div>
                     </div>
                 </div>
