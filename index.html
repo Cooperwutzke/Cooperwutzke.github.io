@@ -9,6 +9,16 @@
         .carousel-inner img {
             margin:auto;
         }
+        .carousel-caption {
+          position: absolute;
+          bottom: 10px; /* Adjust this value as needed */
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background */
+          color: white; /* Optional: changes the text color */
+          padding: 5px 10px; /* Optional: adds padding */
+          border-radius: 5px; /* Optional: rounds the corners */
+        }
     </style>
 </head>
     <body style="margin: 0;">
@@ -39,6 +49,7 @@
                         <video width="640" height="800" class="d-flex w-100" autoplay loop muted>
                             <source src="resources/nunchuck-demo.MOV" type="video/mp4" />
                         </video>
+                        <div class="carousel-caption">Reading Wii Nunchuck input via I2C; Displaying result.</div>
                       </div>
                       <div class="carousel-item">
                         <video width="640" height="800" class="d-flex w-100" autoplay loop muted>
@@ -90,7 +101,7 @@
                         <div class="col">
                             <img class="d-flex w-100" src="resources/HoudiniSTM-rev02.jpg" alt="First PCB Design">                            
                         </div>  
-                        <p class="mx-2 text-muted fs-4">This is the first PCB of my own design. It is a 2 layer board built around a STM32G071 in a 32-LQFP package. This was a learning project for me so there are few added peripherals besides what comes with the MCU. It includes a 3.3v linear regulator for powering the board via 2-3 AA batteries or 1 18650 Li-ion cell, a 32Khz crystal oscillator for time keeping projects, and a red power LED. I built this board with JLCPCB's manufacturing specifications in mind so my goal is to write another post after I have ordered these boards and tested them to see if it's even possible to flash code to them. Hopefully I don't end up with a couple of little paperweights with STM32's I can't get booted up! The risk of discovery!</p>
+                        <p class="mx-2 text-muted fs-4">This is the first PCB of my own design. It is a 2 layer board built around a STM32G071 in a 32-LQFP package. This was a learning project for me so there are few added peripherals besides what comes with the MCU. It includes a 3.3v linear regulator for powering the board via 2-3 AA batteries or 1 18650 Li-ion cell, a 32Khz crystal oscillator for time keeping projects, and a red power LED. I built this board with JLCPCB's manufacturing specifications in mind so my goal is to write another post after I have ordered these boards and tested them to see if it's even possible to flash code to them. Hopefully I don't end up with a couple of little paperweights with STM32's I can't get booted up!</p>
                     </div>
                 </div>
                 <hr>
