@@ -33,9 +33,9 @@
                 <h2 class="fs-5">Bachelors in Computer Science</h2>
                 <hr>
                 <div class="flex-column mt-4 gap-5 mb-auto">
-                    <a class="fs-4 m-1 p-2" href="https://rentontechrobotics.github.io">Robotics Club</a>
+                    <!-- <a class="fs-4 m-1 p-2" href="https://rentontechrobotics.github.io">Robotics Club</a> -->
                     <a class="fs-4 m-1 p-2" href="cooperwutzke97@gmail.com">Email</a>
-                    <p class="fs-4 m-1 p-2">(509)302-3772</p>
+                    <p class="fs-4 m-1 p-2">(509) 302-3772</p>
                     <a class="fs-4 m-1 p-2" href="resources/CooperW_Resume.pdf">Resume</a>
                 </div>
             </div>
@@ -80,6 +80,32 @@
                 <!-- BLOG HEADER -->
                 <div class="d-flex text-primary display-1">Projects</div>
                 <hr>
+
+
+                <!-- BLOG POST -->
+                <div class="d-grid bg-light m-3">
+                    <h1 class="row display-5">AMTEC Trainer</h1>
+                    <div class="row">
+                        <div class="col text-muted fs-6">                            
+                            <p class="mx-2">The primary trainer for the Mechatronics curriculum; troubleshooting and machine repair being an important aspect of our field of study. It simulates a pick and place conveyor system in an industrial environment and has a suite of sensors, actuators, and controllers. As an education tool it exposes students to electrical, hydraulic, and pneumatic systems, as well as industrial grade robotics like the Fanuc LR Mate in our trainer.</p>                                                                                                            
+                            <img class="d-flex w-100" src="resources/AMTEC-FrontView.JPG" alt="CW-ROV">
+                        </div>
+                        <video width="640" height="800" class="d-flex w-100" autoplay loop muted>
+                            <source src="resources/AMTEC-ControlCabinet.MOV" type="video/mp4" />
+                            <p class="mx-2">Inside this control cabinet is where the magic happens in Mechatronics. Understanding every component in the cabinet and it's function is essential to understanding the system.</p>
+                        </video>                                    
+                    </div>
+                    <div class="row">
+                        <div class="col text-muted fs-6">
+                            <img class="d-flex w-100" src="resources/LoadConveyor-JBox.JPG" alt="CW-ROV">
+                            <img class="d-flex w-100" src="resources/LoadConveyor-JBoxInternal.JPG" alt="CW-ROV">
+                            <p class="mx-2">Each section of the trainer has it's own junction box. Load conveyor, Unload conveyor, Robot. Here is the Load conveyor external and internal.</p>
+                        </div>
+                        <div class="col text-muted fs-6">
+                    
+                        </div>                                                  
+                    </div>
+                </div>
 
                 <!-- BLOG POST -->
                 <div class="d-grid bg-light m-3">
@@ -131,7 +157,7 @@
                         <div class="col">
                             <img class="d-flex w-100" src="resources/HoudiniSTM-rev02.jpg" alt="First PCB Design">                            
                         </div>  
-                        <p class="mx-2 text-muted fs-5">This is the first PCB of my own design. It is a 2 layer board built around a STM32G071 in a 32-LQFP package. This was a learning project for me so there are few added peripherals besides what comes with the MCU. It includes a 3.3v linear regulator for powering the board via 2-3 AA batteries or 1 18650 Li-ion cell, a 32Khz crystal oscillator for time keeping projects, and a red power LED. I built this board with JLCPCB's manufacturing specifications in mind so my goal is to write another post after I have ordered these boards and tested them to see if it's even possible to flash code to them. Hopefully I don't end up with a couple of little paperweights with STM32's I can't get booted up!</p>
+                        <p class="mx-2 text-muted fs-5">This is the first PCB of my own design. It is a 2 layer board built around a STM32G071 in a 32-LQFP package. This was a learning project for me so there are few added peripherals besides what comes with the MCU. It includes a 3.3v linear regulator for powering the board via 2-3 AA batteries or 1 18650 Li-ion cell, a 32Khz crystal oscillator for time keeping projects, and a red power LED. I built this board with JLCPCB's manufacturing specifications in mind so my goal is to write another post after I have ordered these boards and tested them to see if it's even possible to flash code to them.</p>
                     </div>
                 </div>
                 <hr>
@@ -160,9 +186,9 @@
                             <div class="d-grid bg-light m-3">
                                 <h1 class="row display-5">RPI-NAS</h1>
                                 <div class="row">
-                                    <img class="h-75 p-1" src="resources/PiNAS-acrylic.JPG" alt="Raspberry Pi NAS">
+                                    <img class="h-75 p-1" src="resources/RPI-NAS.JPG" alt="Raspberry Pi NAS">
                                     <div class="col text-muted fs-5">
-                                        <p>Raspberry Pi 4 NAS. Uses a USB to HDD converter for 2.5" sized drives. On the front is a tiny OLED display to show what IP address to connect to to access the drive, and any other info I want to show, perhaps CPU temp. While the Raspberry Pi 4 is wifi enabled I would like to hook it up to my switch for increased speeds.</p>
+                                        <p>Raspberry Pi 4 NAS. Uses a USB to HDD converter for 2.5" sized drives. On the bottom is a UPS Hat for the Raspberry Pi which uses two 18650 batteries for battery operated use.</p>
                                         <p class="fs-6">More later...</p>
                                     </div>
                                 </div>
